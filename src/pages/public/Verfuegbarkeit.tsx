@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import { format, parseISO, differenceInDays, addDays, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isToday, isWithinInterval, startOfDay } from 'date-fns';
-import { de } from 'date-fns/locale';
 import { PublicShell } from '@/components/PublicShell';
 import {
   loadPublicPagesConfig,
@@ -11,7 +10,7 @@ import {
   type PublicPagesConfig,
   type PublicPageConfig,
 } from '@/lib/publicClient';
-import { tx } from '@/i18n';
+import { tx, dateFnsLocale } from '@/i18n';
 import {
   IconCalendar,
   IconArrowLeft,
@@ -183,7 +182,7 @@ function MonthCalendar({
               cursor = 'cursor-default';
             } else {
               bg = tone === 'start' ? 'bg-emerald-500 rounded-l-full' : tone === 'end' ? 'bg-emerald-500 rounded-r-full' : tone === 'middle' ? 'bg-emerald-100' : 'bg-emerald-500 rounded-full';
-              textColor = status === 'frei' && (tone === 'start' || tone === 'end' || tone === 'frei') ? 'text-white' : 'text-emerald-700';
+              textColor = (tone === 'start' || tone === 'end') ? 'text-white' : 'text-emerald-700';
             }
           }
 
@@ -271,7 +270,7 @@ function Step1Availability({
   const nights = selStart && selEnd ? differenceInDays(parseISO(selEnd), parseISO(selStart)) : 0;
   const canProceed = selStart && selEnd && nights >= 3 && !minNightsError;
 
-  const monthLabel = format(new Date(viewYear, viewMonth, 1), 'MMMM yyyy', { locale: de });
+  const monthLabel = format(new Date(viewYear, viewMonth, 1), 'MMMM yyyy', { locale: dateFnsLocale() });
 
   // Show two months
   const nextViewMonth = viewMonth === 11 ? 0 : viewMonth + 1;
@@ -310,7 +309,7 @@ function Step1Availability({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <div className="text-center text-sm font-medium text-muted-foreground mb-2 capitalize">
-            {format(new Date(viewYear, viewMonth, 1), 'MMMM yyyy', { locale: de })}
+            {format(new Date(viewYear, viewMonth, 1), 'MMMM yyyy', { locale: dateFnsLocale() })}
           </div>
           <MonthCalendar
             year={viewYear}
@@ -323,7 +322,7 @@ function Step1Availability({
         </div>
         <div className="hidden md:block">
           <div className="text-center text-sm font-medium text-muted-foreground mb-2 capitalize">
-            {format(new Date(nextViewYear, nextViewMonth, 1), 'MMMM yyyy', { locale: de })}
+            {format(new Date(nextViewYear, nextViewMonth, 1), 'MMMM yyyy', { locale: dateFnsLocale() })}
           </div>
           <MonthCalendar
             year={nextViewYear}
@@ -342,13 +341,13 @@ function Step1Availability({
           <div className="flex gap-4 text-sm flex-wrap">
             <span>
               <span className="text-muted-foreground">{tx('Anreise:')}</span>{' '}
-              <span className="font-medium">{format(parseISO(selStart), 'dd. MMMM yyyy', { locale: de })}</span>
+              <span className="font-medium">{format(parseISO(selStart), 'dd. MMMM yyyy', { locale: dateFnsLocale() })}</span>
             </span>
             {selEnd && (
               <>
                 <span>
                   <span className="text-muted-foreground">{tx('Abreise:')}</span>{' '}
-                  <span className="font-medium">{format(parseISO(selEnd), 'dd. MMMM yyyy', { locale: de })}</span>
+                  <span className="font-medium">{format(parseISO(selEnd), 'dd. MMMM yyyy', { locale: dateFnsLocale() })}</span>
                 </span>
                 <span>
                   <span className="text-muted-foreground">{tx('Nächte:')}</span>{' '}
@@ -489,9 +488,9 @@ function Step2Form({
           <IconCalendar size={18} className="text-emerald-600 shrink-0 mt-0.5" />
           <div className="text-sm space-y-0.5">
             <div className="font-medium text-emerald-800">
-              {format(parseISO(form.wunsch_anreise), 'dd. MMMM yyyy', { locale: de })}
+              {format(parseISO(form.wunsch_anreise), 'dd. MMMM yyyy', { locale: dateFnsLocale() })}
               {' — '}
-              {format(parseISO(form.wunsch_abreise), 'dd. MMMM yyyy', { locale: de })}
+              {format(parseISO(form.wunsch_abreise), 'dd. MMMM yyyy', { locale: dateFnsLocale() })}
             </div>
             <div className="text-emerald-600">{tx`${nights} Nächte`}</div>
           </div>
@@ -558,7 +557,7 @@ function Step2Form({
           <div className="relative">
             <IconMail size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground shrink-0" />
             <input type="email" className={fieldClass('email') + ' pl-9'} value={form.email}
-              onChange={set('email')} placeholder="maria@beispiel.de" required />
+              onChange={set('email')} placeholder={tx('maria@beispiel.de')} required />
           </div>
           {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email}</p>}
         </div>
@@ -641,11 +640,11 @@ function Step3Confirmation({ form }: { form: AnfrageForm }) {
       <div className="rounded-lg border bg-muted/40 p-4 text-sm text-left space-y-2 max-w-sm mx-auto">
         <div className="flex justify-between">
           <span className="text-muted-foreground">{tx('Anreise')}</span>
-          <span className="font-medium">{format(parseISO(form.wunsch_anreise), 'dd. MMM yyyy', { locale: de })}</span>
+          <span className="font-medium">{format(parseISO(form.wunsch_anreise), 'dd. MMM yyyy', { locale: dateFnsLocale() })}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-muted-foreground">{tx('Abreise')}</span>
-          <span className="font-medium">{format(parseISO(form.wunsch_abreise), 'dd. MMM yyyy', { locale: de })}</span>
+          <span className="font-medium">{format(parseISO(form.wunsch_abreise), 'dd. MMM yyyy', { locale: dateFnsLocale() })}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-muted-foreground">{tx('Nächte')}</span>
