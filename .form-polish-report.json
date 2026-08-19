@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Zeitplanung ohne Preislogik — keine berechenbaren Geldbeträge oder Mengen. Das Datumspaar beschreibt nur Belegungszeiträume, Status ist ein statisches Lookup, keine Applookup-Verkettungen."
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": [],
+      "reason": "Anfrage-Formular für Kundenwünsche ohne Rechnungslogik. Kein Gesamtkosten-Feld, keine Applookups zu Preisen — die Buchung selbst wird als separate Entity mit Kalkulationen erfasst. Datumspaar und Personenanzahl sind reine Eingabefelder."
+    }
+  }
+}

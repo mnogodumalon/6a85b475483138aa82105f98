@@ -1,0 +1,20 @@
+{
+  "slug": "verfuegbarkeit",
+  "component": "Verfuegbarkeit",
+  "title": "Verfügbarkeit & Buchungsanfrage",
+  "endpoints": [
+    {
+      "entity": "belegungskalender",
+      "op": "list",
+      "fields": ["anreisedatum", "abreisedatum", "status"],
+      "scope_description": "Zeigt alle Belegungskalender-Einträge mit Anreise-, Abreisedatum und Status (belegt/frei) — ohne interne Notizen",
+      "max_records": 200
+    },
+    {
+      "entity": "buchungsanfrage",
+      "op": "create",
+      "fields": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen", "vorname", "nachname", "email", "telefon", "anmerkungen", "datenschutz"],
+      "preset_fields": {}
+    }
+  ]
+}
