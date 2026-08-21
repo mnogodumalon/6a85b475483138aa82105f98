@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "en": {
+      "1 neue Buchungsanfrage wartet auf deine Antwort.": "1 new booking request is waiting for your response.",
+      "Anfragen ansehen": "View inquiries",
+      "Anreisen diese Woche": "Check-ins This Week",
+      "Belegen": "Mark as Occupied",
+      "Belegt": "Occupied",
+      "Buchung eintragen": "Add Booking",
+      "Buchung verschoben auf {0}": "Booking rescheduled to {0}",
+      "Buchungsanfragen": "Booking Requests",
+      "Eintragen": "Add",
+      "Frei": "Available",
+      "Freie Zeiträume": "Available Periods",
+      "Freien Zeitraum eintragen": "Add Available Period",
+      "Ja": "Yes",
+      "Jetzt belegt": "Now Occupied",
+      "Kein Datum": "No Date",
+      "Keine freien Zeiträume eingetragen.": "No available periods entered.",
+      "Keine offenen Anfragen — die Wohnung ist gut vermarktet!": "No open requests — the apartment is well marketed!",
+      "Nein": "No",
+      "Noch keine Buchungen eingetragen — lass den Kalender befüllen!": "No bookings entered yet — let's fill up the calendar!",
+      "Nächste Anreise: {0}": "Next Check-in: {0}",
+      "Unbekannt": "Unknown",
+      "Unbekannter Zeitraum": "Unknown Period",
+      "Wohnung derzeit belegt — nächste Anreise {0}.": "Apartment currently occupied — next check-in {0}.",
+      "Wohnung derzeit belegt.": "Apartment currently occupied.",
+      "Wohnung gerade frei — nächste Anreise {0}.": "Apartment currently available — next check-in {0}.",
+      "Zeitraum als belegt markiert": "Period marked as occupied",
+      "{0} Buchungsanfragen warten auf deine Antwort.": "{0} booking requests are waiting for your response.",
+      "{0} {1} fragt an — Wunschanreise {2}.": "{0} {1} is inquiring — requested check-in {2}."
+    }
+  },
+  "v": 1
+}

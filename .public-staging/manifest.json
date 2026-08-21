@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "file": "src/pages/public/Ferienwohnung.tsx",
+      "component": "Ferienwohnung",
+      "slug": "ferienwohnung",
+      "ok": true,
+      "blocked": false,
+      "error": null
+    }
+  ]
+}

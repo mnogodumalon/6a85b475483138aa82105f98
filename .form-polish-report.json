@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Kalender-Belegungskontrolle ohne Preismodell — keine Berechnung notwendig"
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 8,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": [],
+      "reason": "Anfrage-Erfassungsformular für Interessenten — keine Preiskalkulationen oder berechenbaren Felder"
+    }
+  }
+}
