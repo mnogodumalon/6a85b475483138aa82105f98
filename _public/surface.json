@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "verfuegbarkeit",
+      "component": "Verfuegbarkeit",
+      "title": "Verfügbarkeit Ferienwohnung",
+      "endpoints": [
+        {
+          "entity": "belegungskalender",
+          "op": "list",
+          "fields": [
+            "anreisedatum",
+            "abreisedatum",
+            "status"
+          ],
+          "scope": "r.v_status == 'belegt'",
+          "scope_description": "Zeigt nur Belegungskalender-Einträge mit Status 'belegt' — interne Notizen und freie Zeiträume werden nicht übertragen.",
+          "max_records": 500
+        },
+        {
+          "entity": "buchungsanfrage",
+          "op": "create",
+          "fields": [
+            "wunsch_anreise",
+            "wunsch_abreise",
+            "anzahl_personen",
+            "vorname",
+            "nachname",
+            "email",
+            "telefon",
+            "anmerkungen",
+            "datenschutz"
+          ],
+          "preset_fields": {}
+        }
+      ]
+    }
+  ]
+}

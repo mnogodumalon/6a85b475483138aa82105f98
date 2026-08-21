@@ -245,7 +245,7 @@ export default function Verfuegbarkeit() {
                 {range.from && range.to && nights >= 3 && (
                   <div className="rounded-lg bg-primary/5 border border-primary/20 px-4 py-3 text-sm space-y-0.5">
                     <p className="font-medium text-foreground">
-                      {format(parseISO(range.from), 'dd.MM.yyyy')} &rarr; {format(parseISO(range.to), 'dd.MM.yyyy')}
+                      {format(parseISO(range.from), 'dd.MM.yyyy')} {tx('&rarr;')} {format(parseISO(range.to), 'dd.MM.yyyy')}
                     </p>
                     <p className="text-muted-foreground">
                       {nights === 1 ? tx('1 Nacht') : `${nights} ${tx('Nächte')}`}
