@@ -344,6 +344,7 @@ export default function Ferienwohnung() {
           <div className="rounded-2xl bg-card border border-border shadow-sm p-5">
             <label className="flex items-start gap-3 cursor-pointer">
               <input
+                id="datenschutz"
                 type="checkbox"
                 className="mt-0.5 h-4 w-4 shrink-0 rounded border-input accent-primary"
                 checked={datenschutz}

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "ferienwohnung",
+      "component": "Ferienwohnung",
+      "title": "Ostsee Ferienwohnung – Verfügbarkeit & Anfrage",
+      "endpoints": [
+        {
+          "entity": "belegungskalender",
+          "op": "list",
+          "fields": [
+            "anreisedatum",
+            "abreisedatum",
+            "status"
+          ],
+          "scope_description": "zeigt alle Belegungskalender-Einträge (belegt und frei) — ohne Gästenamen und interne Notizen",
+          "max_records": 200
+        },
+        {
+          "entity": "buchungsanfrage",
+          "op": "create",
+          "fields": [
+            "wunsch_anreise",
+            "wunsch_abreise",
+            "anzahl_personen",
+            "vorname",
+            "nachname",
+            "email",
+            "telefon",
+            "anmerkungen",
+            "datenschutz"
+          ]
+        }
+      ]
+    }
+  ]
+}
