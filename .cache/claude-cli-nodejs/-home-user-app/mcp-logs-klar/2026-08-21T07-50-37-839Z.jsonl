@@ -5,3 +5,4 @@
 {"debug":"Tool 'build_intent_pages' still running (60s elapsed)","timestamp":"2026-08-21T07:52:21.116Z","sessionId":"5ab2fbcb-53d6-47d1-9bf6-00cc1616674b","cwd":"/home/user/app"}
 {"debug":"Tool 'build_intent_pages' still running (90s elapsed)","timestamp":"2026-08-21T07:52:51.116Z","sessionId":"5ab2fbcb-53d6-47d1-9bf6-00cc1616674b","cwd":"/home/user/app"}
 {"debug":"Tool 'build_intent_pages' still running (120s elapsed)","timestamp":"2026-08-21T07:53:21.119Z","sessionId":"5ab2fbcb-53d6-47d1-9bf6-00cc1616674b","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' completed successfully in 2m 21s","timestamp":"2026-08-21T07:53:42.678Z","sessionId":"5ab2fbcb-53d6-47d1-9bf6-00cc1616674b","cwd":"/home/user/app"}
