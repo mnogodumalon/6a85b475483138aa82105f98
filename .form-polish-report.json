@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_belegungskalender_aufenthalt_nächte"],
+      "reason": "Datumspaar (Anreise/Abreise) mit Status-Lookup und interner Notiz — virtuelle Dauer-Anzeige für Belegungskontrolle"
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": ["_buchungsanfrage_aufenthalt_nächte"],
+      "reason": "Gast-Anfrage-Formular mit Kontaktdaten und Datumswunsch — virtuelle Dauer-Anzeige zur Validierung der Gast-Eingaben"
+    }
+  }
+}

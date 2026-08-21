@@ -1,0 +1,41 @@
+{
+  "pages": {
+    "en": {
+      "Abreise angepasst": "Check-out adjusted",
+      "Aktuell belegt": "Currently occupied",
+      "Anreise in {0} Tagen": "Check-in in {0} days",
+      "Bald anreisend (7 Tage)": "Arriving soon (7 days)",
+      "Belegt": "Occupied",
+      "Belegung eintragen": "Add booking",
+      "Belegung verschoben": "Booking moved",
+      "Belegungen (30 Tage)": "Occupancy (30 days)",
+      "Buchung für {0} {1} eingetragen": "Booking for {0} {1} added",
+      "Buchungsanfragen": "Booking requests",
+      "Details ansehen": "View details",
+      "Die Wohnung ist aktuell belegt — Abreise am {0}.": "The apartment is currently occupied — check-out on {0}.",
+      "Die Wohnung ist aktuell belegt.": "The apartment is currently occupied.",
+      "Eintragen": "Add",
+      "Frei": "Free",
+      "Freigeben": "Release",
+      "Ja": "Yes",
+      "Keine Buchungen in nächster Zeit — die Wohnung ist frei.": "No upcoming bookings — the apartment is free.",
+      "Keine offenen Anfragen — alles bearbeitet.": "No open requests — all handled.",
+      "Mindestaufenthalt: 3 Nächte": "Minimum stay: 3 nights",
+      "Neue Belegung eintragen": "Add new booking",
+      "Noch keine Belegungen eingetragen.": "No bookings added yet.",
+      "Nächste Belegung: {0}.": "Next booking: {0}.",
+      "Nächste Belegungen (30 Tage)": "Upcoming bookings (30 days)",
+      "Nächste Buchung: {0}": "Next booking: {0}",
+      "Offene Anfragen": "Open requests",
+      "Personen": "Guests",
+      "Unbekannt": "Unknown",
+      "Verfügbar": "Available",
+      "Zeitraum als frei markiert": "Period marked as free",
+      "bis": "to",
+      "bis {0}": "until {0}",
+      "{0} Nacht": "{0} Night",
+      "{0} Nächte": "{0} Nights"
+    }
+  },
+  "v": 1
+}

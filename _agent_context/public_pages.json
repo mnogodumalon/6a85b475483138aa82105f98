@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "verfuegbarkeit",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Verfügbarkeit & Buchungsanfrage",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ]
+    }
+  ]
+}
