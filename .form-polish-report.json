@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Zeitsperrung (Zeitspanne + Status-Markierung), keine numerischen oder applookup-Felder, nichts berechenbar"
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": [],
+      "reason": "Reine Anfrage-Erfassung (Namen, Kontakt, gewünschte Daten), keine Preis-/Kosten-Felder oder applookups, keine Berechnung erforderlich"
+    }
+  }
+}

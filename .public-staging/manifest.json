@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "file": "src/pages/public/Verfuegbarkeit.tsx",
+      "component": "Verfuegbarkeit",
+      "slug": "verfuegbarkeit",
+      "ok": true,
+      "blocked": false,
+      "error": null
+    }
+  ]
+}

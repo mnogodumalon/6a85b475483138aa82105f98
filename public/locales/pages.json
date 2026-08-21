@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "en": {
+      "Abreise": "Check-out",
+      "Anfrage ansehen": "View Request",
+      "Anfrage erfassen": "Record Request",
+      "Anreise": "Check-in",
+      "Anreisen heute": "Check-ins Today",
+      "Belegt": "Occupied",
+      "Buchung direkt eintragen": "Enter Booking Directly",
+      "Buchung verschoben": "Booking Rescheduled",
+      "Buchungen nächste 30 Tage": "Bookings Next 30 Days",
+      "Buchungsdauer geändert": "Booking Duration Changed",
+      "Eine neue Buchungsanfrage wartet auf deine Antwort.": "A new booking request is awaiting your response.",
+      "Frei gehalten": "Held Free",
+      "Heute belegt": "Occupied Today",
+      "Heute keine Anreisen oder Abreisen.": "No check-ins or check-outs today.",
+      "Heutige Bewegungen": "Today's Activity",
+      "Keine offenen Anfragen.": "No open requests.",
+      "Mindestaufenthalt: 3 Nächte": "Minimum Stay: 3 Nights",
+      "Neue Anfragen": "New Requests",
+      "Neue Buchung": "New Booking",
+      "Neue Buchung anlegen": "Create New Booking",
+      "Noch keine Buchungen eingetragen.": "No bookings recorded yet.",
+      "Nächste Anreise: {0}": "Next Check-in: {0}",
+      "Offene Anfragen": "Open Requests",
+      "Pers.": "Guests",
+      "Status geändert": "Status Changed",
+      "Unbekannt": "Unknown",
+      "bis": "to",
+      "{0} Abreise heute": "{0} Check-out Today",
+      "{0} Anreise heute": "{0} Check-in Today",
+      "{0} Buchungsanfragen warten auf deine Antwort.": "{0} booking requests are awaiting your response.",
+      "{0} offene Anfrage": "{0} Open Request",
+      "→ Belegt": "→ Occupied",
+      "→ Frei": "→ Free"
+    }
+  },
+  "v": 1
+}
