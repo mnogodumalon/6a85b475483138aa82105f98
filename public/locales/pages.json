@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "en": {
+      "1 Buchungsanfrage betrifft einen bereits belegten Zeitraum.": "1 booking request concerns an already occupied period.",
+      "Aktive Belegungen": "Active Occupancies",
+      "Als Buchung übernehmen": "Convert to Booking",
+      "Anfragen prüfen": "Review Requests",
+      "Annehmen": "Accept",
+      "Anreise: {0}": "Arrival: {0}",
+      "Auslastung (30 Tage)": "Occupancy Rate (30 Days)",
+      "Belegt": "Occupied",
+      "Belegung angepasst": "Occupancy Adjusted",
+      "Belegung verschoben": "Occupancy Moved",
+      "Buchungsanfragen": "Booking Requests",
+      "Die Wohnung ist frei — perfekt für eine neue Buchung.": "The apartment is available — perfect for a new booking.",
+      "Frei": "Available",
+      "Freie Zeiträume können nicht verschoben werden": "Available Periods Cannot Be Moved",
+      "Gast": "Guest",
+      "Kein Wunschtermin": "No Preferred Date",
+      "Keine Buchungsanfragen — teile deinen Buchungslink mit Gästen!": "No booking requests — share your booking link with guests!",
+      "Kommende Aufenthalte": "Upcoming Stays",
+      "Konflikt": "Conflict",
+      "Konflikte": "Conflicts",
+      "Mindestaufenthalt: 3 Nächte": "Minimum Stay: 3 Nights",
+      "Neue Anfrage erfassen": "Add New Request",
+      "Neue Anfragen": "New Requests",
+      "Neue Belegung": "New Occupancy",
+      "Noch keine Belegungen — ziehe im Kalender einen Zeitraum auf!": "No occupancies yet — drag a period on the calendar!",
+      "Notiz": "Note",
+      "Nächste Anreise:": "Next Arrival:",
+      "Nächte": "Nights",
+      "Unbekannt": "Unknown",
+      "Zeitraum bereits belegt": "Period Already Occupied",
+      "{0} Abreise{1} heute": "{0} Departure{1} Today",
+      "{0} Anreise{1} heute": "{0} Arrival{1} Today",
+      "{0} Buchungsanfragen betreffen bereits belegte Zeiträume.": "{0} booking requests concern already occupied periods.",
+      "{0} Nächte": "{0} Nights",
+      "{0} kommende Aufenthalt{1}": "{0} Upcoming Stay{1}"
+    }
+  },
+  "v": 1
+}

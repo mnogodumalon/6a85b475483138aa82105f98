@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 3,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_belegungskalender_dauer_tage"],
+      "reason": "Datumspaar ohne Preisberechnung — nur virtuelle Dauer-Anzeige für User-Info; keine applookup-Verkettung vorhanden"
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": ["_buchungsanfrage_dauer_nächte"],
+      "reason": "Öffentliche Anfrage-Form mit Personendaten und Datumspaar — virtuelle Dauer-Anzeige für Aufenthaltsdauer; keine Preiskalkulationen"
+    }
+  }
+}
