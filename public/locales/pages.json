@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "en": {
+      "Aktuell belegt": "Currently occupied",
+      "Aktuell ist die Wohnung frei — klicke im Kalender auf einen Zeitraum zum Eintragen.": "Apartment is currently free — click a period in the calendar to add an entry.",
+      "Aktuell {0} {1} {2} in der Wohnung.": "Currently {0} {1} {2} in the apartment.",
+      "Anfragen": "Inquiries",
+      "Anreise in Kürze: {0}": "Arrival coming soon: {0}",
+      "Anreise vorbereiten": "Prepare arrival",
+      "Bald belegte Zeiträume": "Upcoming occupied periods",
+      "Belegt": "Occupied",
+      "Belegungen gesamt": "Total occupancies",
+      "Bestätigen": "Confirm",
+      "Buchung angepasst": "Booking adjusted",
+      "Buchung verschoben": "Booking rescheduled",
+      "Buchungsanfragen": "Booking inquiries",
+      "Gast": "Guest",
+      "Gäste": "Guests",
+      "Keine Buchungen in den nächsten 30 Tagen.": "No bookings in the next 30 days.",
+      "Keine offenen Anfragen — alles erledigt!": "No open inquiries — all done!",
+      "Mindestaufenthalt: 3 Nächte": "Minimum stay: 3 nights",
+      "Neue Anfrage": "New inquiry",
+      "Nächste 30 Tage": "Next 30 days",
+      "Nächste Anreise: {0}.": "Next arrival: {0}.",
+      "Termin eintragen": "Add appointment",
+      "Unbekannt": "Unknown",
+      "ist": "is",
+      "sind": "are",
+      "{0} — als Buchung eingetragen": "{0} — entered as booking"
+    }
+  },
+  "v": 1
+}

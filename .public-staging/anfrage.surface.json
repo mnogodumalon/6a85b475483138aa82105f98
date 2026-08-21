@@ -1,0 +1,22 @@
+{
+  "slug": "anfrage",
+  "component": "Anfrage",
+  "title": "Buchungsanfrage",
+  "endpoints": [
+    {
+      "entity": "buchungsanfrage",
+      "op": "create",
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ]
+    }
+  ]
+}

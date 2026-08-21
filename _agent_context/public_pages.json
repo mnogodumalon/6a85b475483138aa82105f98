@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "ferienwohnung",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Ostsee Ferienwohnung – Verfügbarkeit & Anfrage",
+      "published": false,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ]
+    },
+    {
+      "slug": "verfuegbarkeit",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Verfügbarkeit & Buchungsanfrage",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ]
+    }
+  ]
+}

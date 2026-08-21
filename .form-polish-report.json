@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum"],
+      "computed_keys": [],
+      "reason": "Verwaltungs-/Kalender-Entity ohne Preisrechnung — reine Datenpflege (Anreise/Abreise-Block, Status, Notiz). Keine applookup-, keine Preis-/Kosten-Felder → keine berechneten Werte nötig."
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen", "datenschutz"],
+      "computed_keys": [],
+      "reason": "Öffentliches Anfrage-Formular (Kontaktdaten + Reisedatum-Paar + Personenanzahl). Keine applookup-, keine Preis-/Kosten-/Multiplizierungs-Felder → keine berechneten Werte. Reine Datenerfassung."
+    }
+  }
+}
