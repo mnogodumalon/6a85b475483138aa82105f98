@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 4,
+      "defaults_keys": ["anreisedatum", "abreisedatum", "status"],
+      "computed_keys": ["_belegungskalender_dauer_nächte"],
+      "reason": "Zeitraum-Verwaltung mit Anreise/Abreise-Paar; Dauer (Nächte) als virtuelle Berechnung (dateDiff). Keine applookup-Ziele mit Preisen, daher keine Kosten-Formeln nötig."
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 9,
+      "defaults_keys": ["wunsch_anreise", "wunsch_abreise", "anzahl_personen"],
+      "computed_keys": [],
+      "reason": "Reine Kontakt- und Wunsch-Erfassung (Namen, E-Mail, Datumsbereich, Personenanzahl). Keine applookup-Felder, keine Preisberechnung möglich — ein Kontaktformular ohne Buchungslogik."
+    }
+  }
+}

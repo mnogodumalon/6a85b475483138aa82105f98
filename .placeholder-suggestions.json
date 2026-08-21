@@ -1,0 +1,19 @@
+{
+  "BelegungskalenderDialog.tsx": {
+    "anreisedatum": "Wann checkt der Gast ein?",
+    "abreisedatum": "Wann checkt der Gast aus?",
+    "status": "z. B. Belegt, Frei",
+    "interne_notiz": "Notizen nur für dich — Besonderheiten, Regeln, Reinigung..."
+  },
+  "BuchungsanfrageDialog.tsx": {
+    "wunsch_anreise": "Ab wann gewünscht?",
+    "wunsch_abreise": "Bis wann gewünscht?",
+    "anzahl_personen": "z. B. 2",
+    "vorname": "z. B. Müller",
+    "nachname": "z. B. Schmidt",
+    "email": "z. B. mail@beispiel.de",
+    "telefon": "z. B. +49 123 4567890",
+    "anmerkungen": "Wünsche, Haustiere, Allergien, besondere Wünsche...",
+    "datenschutz": "Zustimmung erforderlich"
+  }
+}

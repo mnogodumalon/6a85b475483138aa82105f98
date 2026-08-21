@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "en": {
+      "Abreise {0}": "Checkout {0}",
+      "Als frei": "As available",
+      "Als frei markiert": "Marked as available",
+      "Anfrage öffnen": "Open inquiry",
+      "Anfragen": "Inquiries",
+      "Aufenthalt angepasst": "Stay adjusted",
+      "Auslastung (30 Tage)": "Occupancy (30 days)",
+      "Bald frei": "Checking out soon",
+      "Belegt": "Occupied",
+      "Belegung eintragen": "Enter occupancy",
+      "Buchung verschoben": "Booking rescheduled",
+      "Buchungen gesamt": "Total bookings",
+      "Buchungsanfragen": "Booking requests",
+      "Eintragen": "Enter",
+      "Frei — nächste Anreise am {0}": "Available — next check-in on {0}",
+      "Freigehalten": "Blocked",
+      "Heute belegt — Abreise {0}": "Occupied today — Checkout {0}",
+      "Keine Abreisen in den nächsten 14 Tagen.": "No checkouts in the next 14 days.",
+      "Keine Buchungen eingetragen.": "No bookings entered.",
+      "Keine Notiz": "No note",
+      "Keine offenen Anfragen — nächste Anreise {0}": "No open requests — next check-in {0}",
+      "Mindestaufenthalt: 3 Nächte": "Minimum stay: 3 nights",
+      "Neue Buchung": "New Booking",
+      "Noch keine Anfragen eingegangen.": "No requests received yet.",
+      "Personen": "Persons",
+      "Unbekannt": "Unknown",
+      "Wohnung ist heute belegt.": "Apartment is occupied today.",
+      "{0} neue Buchungsanfragen — älteste von {1} {2}.": "{0} new booking requests — oldest from {1} {2}.",
+      "{0} {1} — neue Buchungsanfrage für {2} bis {3}.": "{0} {1} — new booking request for {2} to {3}."
+    }
+  },
+  "v": 1
+}
