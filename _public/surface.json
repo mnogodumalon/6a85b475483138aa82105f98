@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "component": "Buchungsanfrage",
+      "title": "Buchungsanfrage Ferienwohnung",
+      "endpoints": [
+        {
+          "entity": "belegungskalender",
+          "op": "list",
+          "fields": [
+            "anreisedatum",
+            "abreisedatum",
+            "status"
+          ],
+          "scope": "r.v_status == 'belegt'",
+          "scope_description": "Zeigt nur Einträge mit Status 'belegt' — belegte Zeiträume für den Verfügbarkeitskalender",
+          "max_records": 200
+        },
+        {
+          "entity": "buchungsanfrage",
+          "op": "create",
+          "fields": [
+            "wunsch_anreise",
+            "wunsch_abreise",
+            "anzahl_personen",
+            "vorname",
+            "nachname",
+            "email",
+            "telefon",
+            "anmerkungen",
+            "datenschutz"
+          ]
+        }
+      ]
+    }
+  ]
+}

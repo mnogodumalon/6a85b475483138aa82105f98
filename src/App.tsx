@@ -15,6 +15,8 @@ import BelegungskalenderDetailPage from '@/pages/BelegungskalenderDetailPage';
 import BuchungsanfragePage from '@/pages/BuchungsanfragePage';
 import BuchungsanfrageDetailPage from '@/pages/BuchungsanfrageDetailPage';
 // <custom:imports>
+const IntentBelegungErstellenPage = lazy(() => import('@/pages/intents/BelegungErstellenPage'));
+const IntentAnfrageBearbeitenPage = lazy(() => import('@/pages/intents/AnfrageBearbeitenPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -61,6 +63,8 @@ export default function App() {
                 <Route path="admin" element={<AdminPage />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
+                <Route path="intents/belegung-erstellen" element={<Suspense fallback={null}><IntentBelegungErstellenPage /></Suspense>} />
+                <Route path="intents/anfrage-bearbeiten" element={<Suspense fallback={null}><IntentAnfrageBearbeitenPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
