@@ -7,7 +7,7 @@ import {
   type PublicPagesConfig,
   type PublicPageConfig,
 } from '@/lib/publicClient';
-import { tx } from '@/i18n';
+import { tx, dateFnsLocale } from '@/i18n';
 import {
   format,
   startOfMonth,
@@ -23,7 +23,6 @@ import {
   endOfWeek,
   isWithinInterval,
 } from 'date-fns';
-import { de } from 'date-fns/locale';
 import { IconCalendar, IconChevronLeft, IconChevronRight, IconCircleCheck, IconCircleX } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -65,7 +64,7 @@ function CalendarMonth({
   const weekEnd = endOfWeek(lastDay, { weekStartsOn: 1 });
   const allDays = eachDayOfInterval({ start: weekStart, end: weekEnd });
 
-  const monthLabel = format(firstDay, 'MMMM yyyy', { locale: de });
+  const monthLabel = format(firstDay, 'MMMM yyyy', { locale: dateFnsLocale() });
 
   return (
     <div className="rounded-xl border border-border bg-white shadow-sm overflow-hidden">
@@ -298,9 +297,9 @@ export default function Verfuegbarkeit() {
                     <IconCircleCheck size={20} className="text-emerald-500 shrink-0 mt-0.5" />
                     <div className="min-w-0">
                       <p className="font-medium text-emerald-800 text-sm">
-                        {format(start, 'd. MMM', { locale: de })}
+                        {format(start, 'd. MMM', { locale: dateFnsLocale() })}
                         {' – '}
-                        {format(end, 'd. MMM yyyy', { locale: de })}
+                        {format(end, 'd. MMM yyyy', { locale: dateFnsLocale() })}
                       </p>
                       <p className="text-emerald-600 text-xs mt-0.5">
                         {tx`${nights} Nächte verfügbar`}
