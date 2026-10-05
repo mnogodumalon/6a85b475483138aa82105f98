@@ -31,5 +31,6 @@ export interface OccupancyRule {
 
 export const OCCUPANCY: Partial<Record<EntityKey, OccupancyRule>> = {
   // <custom:occupancy>
+  belegungskalender: { from: 'anreisedatum', to: 'abreisedatum', statusField: 'status', freeKeys: ['frei'] },
   // </custom:occupancy>
 };
