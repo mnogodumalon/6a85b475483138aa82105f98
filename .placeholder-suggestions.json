@@ -1,0 +1,16 @@
+{
+  "BelegungskalenderDialog.tsx": {
+    "anreisedatum": "Wann reist der Gast an?",
+    "abreisedatum": "Wann reist der Gast ab?",
+    "interne_notiz": "Notizen nur für Dich"
+  },
+  "BuchungsanfrageDialog.tsx": {
+    "wunsch_anreise": "Wann möchten Sie anreisen?",
+    "wunsch_abreise": "Wann möchten Sie abreisen?",
+    "anzahl_personen": "z. B. 2",
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Müller",
+    "email": "z. B. anna@beispiel.de",
+    "anmerkungen": "Besondere Wünsche oder Fragen"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "en": {
+      "Aktuell belegt": "Currently booked",
+      "Als belegt markieren": "Mark as booked",
+      "Anfrage annehmen & Zeitraum belegen": "Accept inquiry & block period",
+      "Anfrage von {0}": "Inquiry from {0}",
+      "Anfrage: {0}": "Inquiry: {0}",
+      "Anfragen bearbeitest du über die Liste oder die Detailansicht.": "You can process inquiries via the list or the detail view.",
+      "Belegt": "Booked",
+      "Belegt, nächste 90 Tage": "Booked, next 90 days",
+      "Frei": "Available",
+      "Gast": "Guest",
+      "Keine offenen Anfragen und aktuell keine kommende Belegung eingetragen.": "No open inquiries and no upcoming bookings currently entered.",
+      "Keine offenen Anfragen — nächste Anreise am {0}": "No open inquiries — next arrival on {0}",
+      "Keine offenen Anfragen — nächste Anreise am {0}.": "No open inquiries — next arrival on {0}.",
+      "Keine offenen Anfragen.": "No open inquiries.",
+      "Kommende Belegungen": "Upcoming bookings",
+      "Mindestaufenthalt: {0} Nächte": "Minimum stay: {0} nights",
+      "Neue Anfragen": "New inquiries",
+      "Neue Anfragen von {0} warten auf deine Antwort.": "New inquiries from {0} are waiting for your reply.",
+      "Noch keine kommende Belegung eingetragen.": "No upcoming bookings entered yet.",
+      "Nächste Anreise": "Next arrival",
+      "Nächte": "Nights",
+      "Offene Anfragen": "Open inquiries",
+      "Passt nicht": "Doesn't fit",
+      "Zeitraum als belegt markiert": "Period marked as booked",
+      "Zeitraum eintragen": "Add period",
+      "Zeitraum verschoben": "Period moved",
+      "Zeitraum überschneidet sich mit einer Belegung ({0} – {1})": "Period overlaps with an existing booking ({0} – {1})",
+      "in {0} Tagen": "in {0} days",
+      "offen": "open",
+      "{0} Pers.": "{0} guests",
+      "{0} — als belegt eingetragen": "{0} — marked as booked",
+      "✓ Annehmen": "✓ Accept"
+    }
+  },
+  "v": 1
+}

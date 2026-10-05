@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "anfrage",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Buchungsanfrage",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ],
+      "policy": null
+    },
+    {
+      "slug": "ferienwohnung",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Ostsee Ferienwohnung – Verfügbarkeit & Anfrage",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ],
+      "policy": null
+    },
+    {
+      "slug": "verfuegbarkeit",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Verfügbarkeit Ferienwohnung",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ],
+      "policy": null
+    },
+    {
+      "slug": "buchungsanfrage",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Buchungsanfrage Ferienwohnung",
+      "published": true,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ],
+      "policy": null
+    },
+    {
+      "slug": "ferienwohnung-anfrage",
+      "type": "custom",
+      "entity": "buchungsanfrage",
+      "title": "Ferienwohnung anfragen",
+      "published": false,
+      "fields": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen",
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "anmerkungen",
+        "datenschutz"
+      ],
+      "policy": null
+    }
+  ]
+}
