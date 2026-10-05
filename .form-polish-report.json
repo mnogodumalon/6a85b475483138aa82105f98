@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Belegungskalender": {
+      "placeholders_set": 3,
+      "defaults_keys": [
+        "anreisedatum",
+        "abreisedatum",
+        "status"
+      ],
+      "computed_keys": [
+        "_belegung_dauer_naechte"
+      ],
+      "reason": "Anreise und Abreise bilden ein Datumspaar, daher wird die Dauer in Nächten als virtuelles Feld berechnet; ein Preis ist nicht verfügbar, also keine Summe."
+    },
+    "Buchungsanfrage": {
+      "placeholders_set": 7,
+      "defaults_keys": [
+        "wunsch_anreise",
+        "wunsch_abreise",
+        "anzahl_personen"
+      ],
+      "computed_keys": [
+        "_anfrage_dauer_naechte"
+      ],
+      "reason": "Anreise und Abreise bilden ein Datumspaar, daher wird die Aufenthaltsdauer als virtuelles Feld berechnet; es gibt weder Preis noch Dauerfeld."
+    }
+  }
+}

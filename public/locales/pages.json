@@ -1,0 +1,41 @@
+{
+  "pages": {
+    "en": {
+      "Aktuell ist alles belegt.": "Currently fully booked.",
+      "Alles frei": "All available",
+      "Anfrage": "Inquiry",
+      "Anfrage von {0}": "Inquiry from {0}",
+      "Anfrage – Konflikt": "Inquiry – Conflict",
+      "Anfragen lassen sich nur annehmen, nicht verschieben.": "Inquiries can only be accepted, not moved.",
+      "Anfragen prüfen": "Review inquiries",
+      "Annehmen": "Accept",
+      "Annehmen & als belegt eintragen": "Accept & mark as booked",
+      "Auslastung (90 Tage)": "Occupancy (90 days)",
+      "Belegen": "Book",
+      "Belegt": "Booked",
+      "Belegung eintragen": "Add booking",
+      "Der Zeitraum überschneidet sich mit einer Belegung ({0} – {1}).": "The period overlaps with a booking ({0} – {1}).",
+      "Frei": "Available",
+      "Freie Zeiträume": "Available periods",
+      "Keine offenen Anfragen und aktuell keine kommende Belegung.": "No open inquiries and currently no upcoming bookings.",
+      "Keine offenen Anfragen — nächste Anreise am {0}.": "No open inquiries — next arrival on {0}.",
+      "Keine offenen Anfragen.": "No open inquiries.",
+      "Mindestaufenthalt sind {0} Nächte.": "Minimum stay is {0} nights.",
+      "Neu": "New",
+      "Nächste Anreise": "Next arrival",
+      "Nächte": "Nights",
+      "Passt nicht": "Doesn't fit",
+      "Zeitraum verschoben: {0} – {1}": "Period moved: {0} – {1}",
+      "ab {0}": "from {0}",
+      "bis {0}": "until {0}",
+      "frei in den nächsten Monaten": "available in the coming months",
+      "keine": "none",
+      "{0} Nächte frei": "{0} nights available",
+      "{0} von 90 Nächten belegt": "{0} of 90 nights booked",
+      "{0} wartet auf deine Antwort.": "{0} is waiting for your reply.",
+      "{0} – {1} als belegt eingetragen": "{0} – {1} marked as booked",
+      "{0}: Der Wunschzeitraum passt nicht zur Belegung.": "{0}: The requested period does not match the bookings."
+    }
+  },
+  "v": 1
+}
