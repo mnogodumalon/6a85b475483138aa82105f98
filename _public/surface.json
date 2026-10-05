@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "ferienwohnung-anfrage",
+      "component": "FerienwohnungAnfrage",
+      "title": "Ferienwohnung anfragen",
+      "endpoints": [
+        {
+          "entity": "belegungskalender",
+          "op": "list",
+          "fields": [
+            "anreisedatum",
+            "abreisedatum",
+            "status"
+          ],
+          "scope": "r.v_abreisedatum >= today()",
+          "scope_description": "zeigt nur Belegungen, deren Abreise heute oder später ist",
+          "max_records": 500
+        },
+        {
+          "entity": "buchungsanfrage",
+          "op": "create",
+          "fields": [
+            "wunsch_anreise",
+            "wunsch_abreise",
+            "anzahl_personen",
+            "vorname",
+            "nachname",
+            "email",
+            "telefon",
+            "anmerkungen",
+            "datenschutz"
+          ]
+        }
+      ]
+    }
+  ]
+}
