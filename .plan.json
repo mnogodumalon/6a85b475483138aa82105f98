@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "language": "de",
+  "understanding": {
+    "summary": "Eine Verwaltung für Ihre Ferienwohnung an der Ostsee. Im Belegungskalender tragen Sie ein, welche Zeiträume belegt oder frei sind. Gäste sehen diese Zeiträume öffentlich, ohne Namen oder Notizen anderer Gäste, und stellen für freie Termine eine Buchungsanfrage. Der Mindestaufenthalt beträgt drei Nächte.",
+    "roles": [
+      "Vermieter",
+      "Gast (anonym, über öffentliche Seite)"
+    ],
+    "main_tasks": [
+      "Belegungskalender pflegen",
+      "Buchungsanfragen prüfen und beantworten",
+      "Gästen freie und belegte Zeiträume zeigen",
+      "Anfragen mit weniger als drei Nächten vermeiden"
+    ],
+    "platform_roles": [
+      {
+        "persona": "Vermieter",
+        "role": "administrator",
+        "apps": [
+          "belegungskalender",
+          "buchungsanfrage"
+        ]
+      }
+    ]
+  },
+  "flows": [
+    {
+      "slug": "zeitraum-belegen",
+      "label": {
+        "de": "Zeitraum belegen",
+        "en": "Block a period"
+      },
+      "description": "Der Vermieter trägt einen belegten Zeitraum im Belegungskalender ein, ohne dass sich Zeiträume überschneiden.",
+      "priority": "must",
+      "writes": [
+        {
+          "entity": "belegungskalender",
+          "op": "create",
+          "when": "always",
+          "fields": {
+            "anreisedatum": "user",
+            "abreisedatum": "user",
+            "status": "fixed:belegt",
+            "interne_notiz": "user"
+          },
+          "needs": {}
+        }
+      ],
+      "required": [],
+      "brief": "# Flow `zeitraum-belegen` — Zeitraum belegen\nDer Vermieter trägt einen belegten Zeitraum im Belegungskalender ein, ohne dass sich Zeiträume überschneiden.\n\n## Your hook — import it, never rebuild what it owns\n`import { useZeitraumBelegenFlow } from '@/lib/journey/flows/ZeitraumBelegen';` — generated from the Schreibliste below. It OWNS the form(s), one record search per picked field (columns and filter from the plan) and the submit plan with every fixed and derived value. You compose: `flow.forms.<entity>` for <Bound>/<Field>, `{...flow.picks.<field>.select} {...flow.pick('<field>')}` (or `flow.pickMany` for a multi pick) for <EntitySelectStep>, `flow.validateStep(n)` in StepNav.onNext, `flow.submit` + `flow.formList` for SummaryStep/SuccessStep, `flow.reset()`. Options: `steps` (field → step), `items` (how a hit reads, per pick), `initial`, `messages`. The hook's docblock in .lane-context.md shows the exact call. Never import servicePort, useStepForm, useJourneySubmit, useRecordSearch or useDashboardData in this page — check-intents refuses a page that uses the hook and any of them.\n\n## Steps (in this order)\n1. Anreise- und Abreisedatum eingeben\n2. Überschneidung mit bestehenden Belegungen prüfen\n3. Zeitraum als belegt speichern\n\n## Schreibliste — the ONLY writes this flow makes (the gate compares your plan steps with this list)\n- creates `belegungskalender`:\n    - `anreisedatum`: the user enters it (bind it through the layer: form.field/…)\n    - `abreisedatum`: the user enters it (bind it through the layer: form.field/…)\n    - `status`: fixed value `belegt` — set it in the plan step's values, never ask\n    - `interne_notiz`: the user enters it (bind it through the layer: form.field/…)\n\n## Reads\n- `belegungskalender` columns anreisedatum, abreisedatum, status\n\n## Success page\n- shows: `belegungskalender.anreisedatum`, `belegungskalender.abreisedatum`, `belegungskalender.status`\n\n## Never write these — another flow or a tool owns them\n"
+    }
+  ],
+  "public_pages": [
+    {
+      "slug": "ferienwohnung-anfrage",
+      "purpose": "Gäste sehen auf einen Blick die belegten und freien Zeiträume (ohne interne Notizen) und stellen für freie Termine eine Buchungsanfrage. Mindestaufenthalt sind drei Nächte.",
+      "publish": false,
+      "lists": [
+        {
+          "entity": "belegungskalender",
+          "columns": [
+            "anreisedatum",
+            "abreisedatum",
+            "status"
+          ],
+          "filter": {
+            "mode": "all",
+            "conditions": [
+              {
+                "field": "abreisedatum",
+                "op": "gte",
+                "value": {
+                  "rel": "today"
+                }
+              }
+            ]
+          },
+          "max_records": null
+        }
+      ],
+      "creates": [
+        {
+          "entity": "buchungsanfrage",
+          "fields": {
+            "wunsch_anreise": "user",
+            "wunsch_abreise": "user",
+            "anzahl_personen": "user",
+            "vorname": "user",
+            "nachname": "user",
+            "email": "user",
+            "telefon": "user",
+            "anmerkungen": "user",
+            "datenschutz": "user"
+          },
+          "fixed": {}
+        }
+      ],
+      "brief": "# Public page `ferienwohnung-anfrage`\nGäste sehen auf einen Blick die belegten und freien Zeiträume (ohne interne Notizen) und stellen für freie Termine eine Buchungsanfrage. Mindestaufenthalt sind drei Nächte.\n\n## Lists (declare exactly these in the surface)\n- `belegungskalender`: columns `anreisedatum`, `abreisedatum`, `status`, filter {\"mode\": \"all\", \"conditions\": [{\"field\": \"abreisedatum\", \"op\": \"gte\", \"value\": {\"rel\": \"today\"}}]}\n\n## Creates (declare exactly these in the surface)\n- `buchungsanfrage`: visitor fields `wunsch_anreise`, `wunsch_abreise`, `anzahl_personen`, `vorname`, `nachname`, `email`, `telefon`, `anmerkungen`, `datenschutz`\n\nPublish: no (draft — the owner publishes)\n"
+    }
+  ],
+  "tools": [
+    {
+      "id": "neue-anfrage-melden",
+      "purpose": "Bei jeder neuen Buchungsanfrage schickt das Werkzeug dem Vermieter eine Zusammenfassung per E-Mail (Zeitraum, Personenzahl, Name) und weist darauf hin, wenn der Zeitraum kürzer als drei Nächte ist oder einen belegten Zeitraum überschneidet."
+    },
+    {
+      "id": "vergangene-zeitraeume-freigeben",
+      "purpose": "Täglich werden belegte Zeiträume, deren Abreisedatum vorbei ist, auf frei gesetzt, damit der öffentliche Kalender aufgeräumt bleibt."
+    }
+  ],
+  "covered_by_platform": [
+    {
+      "wish": "Anfragen und Belegungen als Liste ansehen und durchsuchen",
+      "feature": "list_page"
+    },
+    {
+      "wish": "Belegungen und Anfragen erfassen und bearbeiten",
+      "feature": "record_form"
+    },
+    {
+      "wish": "Zugriff nur für den Vermieter, Gäste sehen keine fremden Daten",
+      "feature": "user_roles"
+    }
+  ],
+  "ownership": {
+    "belegungskalender": {
+      "anreisedatum": "intent:zeitraum-belegen",
+      "abreisedatum": "intent:zeitraum-belegen",
+      "status": "tool:vergangene-zeitraeume-freigeben",
+      "interne_notiz": "intent:zeitraum-belegen"
+    }
+  },
+  "dashboard": {
+    "focus": [
+      "Aktuell belegte und freie Zeiträume",
+      "Neue Buchungsanfragen",
+      "Anstehende Anreisen"
+    ],
+    "hints": [
+      "Interne Notizen und Gästedaten bleiben auf der öffentlichen Seite verborgen",
+      "Mindestaufenthalt von drei Nächten bei Anfragen beachten"
+    ]
+  }
+}

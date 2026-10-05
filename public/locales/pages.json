@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "en": {
+      "Als belegt eintragen": "Mark as booked",
+      "Als frei markierte Zeiträume": "Periods marked as available",
+      "Anfrage ansehen": "View inquiry",
+      "Anstehende Anreisen": "Upcoming arrivals",
+      "Anstehende belegte Zeiträume": "Upcoming booked periods",
+      "Auslastung": "Occupancy",
+      "Belegt": "Booked",
+      "Dieser Zeitraum überschneidet sich mit einer anderen Belegung.": "This period overlaps with another booking.",
+      "Eintragen": "Add",
+      "Ersten Zeitraum eintragen": "Add first period",
+      "Frei": "Available",
+      "Gast": "Guest",
+      "Heute": "Today",
+      "In {0} Tagen": "In {0} days",
+      "Keine anstehenden Anreisen.": "No upcoming arrivals.",
+      "Keine offenen Anfragen und keine anstehende Anreise — die Wohnung ist frei.": "No open inquiries and no upcoming arrival — the apartment is available.",
+      "Keine offenen Anfragen — nächste Anreise am {0}": "No open inquiries — next arrival on {0}",
+      "Keine offenen Anfragen — nächste Anreise am {0}.": "No open inquiries — next arrival on {0}.",
+      "Keine offenen Anfragen.": "No open inquiries.",
+      "Morgen": "Tomorrow",
+      "Neue Anfragen": "New inquiries",
+      "Neue Anfragen von {0} warten auf deine Antwort.": "New inquiries from {0} are waiting for your reply.",
+      "Richte deinen Belegungskalender ein: Trage ein, wann die Wohnung belegt oder frei ist.": "Set up your occupancy calendar: Enter when the apartment is booked or available.",
+      "Unter 3 Nächten": "Under 3 nights",
+      "Zeitraum belegt": "Period booked",
+      "Zeitraum eintragen": "Add period",
+      "Zeitraum frei": "Period available",
+      "Zeitraum verschoben": "Period moved",
+      "der nächsten 90 Nächte": "of the next 90 nights",
+      "haben bereits belegte Zeiträume angefragt.": "requested periods that are already booked.",
+      "hat einen bereits belegten Zeitraum angefragt.": "requested a period that is already booked.",
+      "{0} Nächte": "{0} nights",
+      "{0} — Zeitraum als belegt eingetragen": "{0} — period marked as booked"
+    }
+  },
+  "v": 1
+}
